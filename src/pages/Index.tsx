@@ -54,27 +54,31 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-blue-600 rounded-lg">
-                <GitBranch className="h-6 w-6 text-white" />
-              </div>
-              <h1 className="text-xl font-bold text-slate-900">
-                Collaboration Demo
-              </h1>
+      /* Header */
+        <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
+          <div className="container mx-auto px-4 py-4">
+            <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-blue-600 rounded-lg">
+              <GitBranch className="h-6 w-6 text-white" />
             </div>
-            <Button variant="outline" className="flex items-center gap-2">
-              <Github className="h-4 w-4" />
-              View on GitHub
-            </Button>
+            <h1 className="text-xl font-bold text-slate-900">
+              Collaboration Demo
+            </h1>
           </div>
-        </div>
-      </header>
+          <Button 
+            variant="outline" 
+            className="flex items-center gap-2"
+            onClick={() => window.open('https://github.com/jeetpatel5767/collab-wave-demo', '_blank')}
+          >
+            <img src="https://simpleicons.org/icons/github.svg" alt="GitHub" className="h-4 w-4" />
+            View on GitHub
+          </Button>
+            </div>
+          </div>
+        </header>
 
-      {/* Hero Section */}
+        {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <div className="animate-fade-in">
