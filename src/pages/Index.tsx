@@ -33,7 +33,17 @@ const Index = () => {
       ],
       avatar: `https://github.com/jeet-bhensdadia.png`, // This will be the GitHub avatar
     },
-    // Lovable will add their contributor entry here via PR
+    {
+      name: "Kushal Zinzuvadia",
+      role: "Project Collaborator & SDE",
+      github: "Kushal-Zinzuvadia  ", // Replace with actual GitHub username
+      contributions: [
+        "Initial repository setup",
+        "Homepage design",
+        "Project structure",
+      ],
+      avatar: `https://github.com/kushal-zinzuvadia.png`, // This will be the GitHub avatar
+    },
   ];
 
   const projectStats = [
